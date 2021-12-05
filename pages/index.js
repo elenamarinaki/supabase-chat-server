@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Auth from '../components/Auth';
 
 import { useEffect, useState } from 'react';
 
@@ -18,7 +19,7 @@ export default function Home({ session, supabase }) {
       </Head>
 
       <main className={styles.main}>
-        {loggedIn ? <span>Logged In</span> : <span>Log in button here ⬇ </span>}
+        {loggedIn ? <span>Logged In</span> : <Auth />}
       </main>
     </div>
   );
