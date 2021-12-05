@@ -15,3 +15,7 @@ Real-time data syncing chat application
 ### Index.js
 
 - here we authorize and setup new users
+
+### Auth.js
+
+- component for authorizing new user
