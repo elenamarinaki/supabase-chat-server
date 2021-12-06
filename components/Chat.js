@@ -8,6 +8,7 @@ const Chat = ({ supabase }) => {
 
   //   the useEffect is synchronous to prevent race conditions
   // this is why it's getting underlined here - but it works fine ;)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(async () => {
     const getMessages = async () => {
       let { data: messages, error } = await supabase
