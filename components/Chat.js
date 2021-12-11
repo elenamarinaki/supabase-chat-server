@@ -15,14 +15,15 @@ const Chat = ({ supabase }) => {
         .from('message')
         .select('*');
       console.log('MESSAGES', messages);
+      console.log('error is: ', error);
       setMessages(messages);
     };
     await getMessages();
-  }, [messages]);
+  }, [messages, supabase]);
 
   return (
     <div>
-      {messages.map((message) => (
+      {messages?.map((message) => (
         <div key={message.id}>{message.content}</div>
       ))}
     </div>
