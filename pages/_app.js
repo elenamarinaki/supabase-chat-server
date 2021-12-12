@@ -1,4 +1,5 @@
-import '../styles/globals.css';
+// import '../styles/globals.css';
+import 'tailwindcss/tailwind.css';
 import useSupabase from '../utils/useSupabase';
 
 function MyApp({ Component, pageProps }) {

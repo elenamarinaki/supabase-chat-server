@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import Auth from '../components/Auth';
 import Chat from '../components/Chat';
 
@@ -14,12 +13,12 @@ export default function Home({ session, supabase }) {
   }, [session]);
 
   return (
-    <div className={styles.container}>
+    <div className='container font-sans m-0'>
       <Head>
         <title>Supabase Chat App</title>
       </Head>
 
-      <main className={styles.main}>
+      <main>
         {loggedIn ? <Chat supabase={supabase} /> : <Auth supabase={supabase} />}
       </main>
     </div>
