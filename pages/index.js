@@ -13,7 +13,7 @@ export default function Home({ session, supabase }) {
   }, [session]);
 
   return (
-    <div className='container font-sans m-0'>
+    <div className='container font-sans m-auto'>
       <Head>
         <title>Supabase Chat App</title>
       </Head>

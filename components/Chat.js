@@ -22,10 +22,12 @@ const Chat = ({ supabase }) => {
   }, [messages, supabase]);
 
   return (
-    <div className='flex flex-col bg-deepBlue p-4 m-4 text-paleBeige items-center rounded-xl'>
-      {messages?.map((message) => (
-        <div key={message.id}>{message.content}</div>
-      ))}
+    <div className='flex flex-col text-paleBeige items-center justify-center'>
+      <div>
+        {messages?.map((message) => (
+          <div key={message.id} className='bg-deepBlue p-4 m-2 rounded-xl'>{message.content}</div>
+        ))}
+      </div>
     </div>
   );
 };
